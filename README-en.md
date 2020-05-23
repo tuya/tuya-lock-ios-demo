@@ -46,3 +46,9 @@ Swift project add in `bridge-header.h`
 ```
 import TuyaSmartLockKit
 ```
+
+
+### Smart Lock Docs
+* [BLE Smart Lock SDK](https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/BLELock.html)
+* [Wi-Fi Smart Lock SDK](https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/WiFiLock.html)
+

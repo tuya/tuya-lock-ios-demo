@@ -52,3 +52,11 @@ Swift 项目在需要使用的地方添加
 ```
 import TuyaSmartLockKit
 ```
+
+
+
+### 智能门锁功能文档
+
+* [智能蓝牙门锁 SDK](https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/zh-hans/resource/BLELock.html)
+* [Wi-Fi Smart Lock SDK](https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/zh-hans/resource/WiFiLock.html)
+
