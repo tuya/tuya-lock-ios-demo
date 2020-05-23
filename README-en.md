@@ -1,8 +1,10 @@
 # Tuya Smart Lock iOS SDK
 
+[中文版](README.md) | [English](README-en.md)
+
 Tuya smart lock Android The SDK provides function packaging with smart door lock devices to speed up and simplify the development process of door lock application functions, including the following functions:
 
-* Door lock user system (including lock user management, associated password,  fingerprint, card, etc.)
+* Door lock user system (including lock user management, associated password, fingerprint, card, etc.)
 * Door lock password unlocking (including dynamic password, temporary password management, etc.)
 * Door lock usage records (including door lock unlock records, doorbell records, alarm records, etc.)
 
@@ -13,7 +15,7 @@ Tuya lock SDK is based on [Tuya Smart Home SDK](https://tuyainc.github.io/tuyasm
 Before integrating Tuya Lock SDK, you need to do the following:
 
 * Integrate TuyaHomeSdk (including application for tuya App ID and App Secret, security image configuration related environment)，please read [Tuya Smart Home SDK Document]((https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/zh-hans/resource/Preparation.html))
-* Activation of the door lock device
+* Activation of the lock device
 
 ## Integrated SDK
 
