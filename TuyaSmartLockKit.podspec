@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TuyaSmartLockKit"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.summary = "A short description of #{s.name}."
   s.license = {"type"=>"MIT"}
   s.authors = {"huangkai"=>"huangkai@tuya.com"}
