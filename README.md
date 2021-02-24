@@ -1,29 +1,29 @@
-#### Note: This repository is inherited from the [old Tuya Github repository](https://github.com/TuyaInc/tuyasmart_lock_ios_sdk), which will be deprecated soon. Please use this repository for Tuya SDK development instead. For changing the existing remote repository URL, please check this [tutorial](https://docs.github.com/en/free-pro-team@latest/github/using-git/changing-a-remotes-url)
+#### Note: This repository is inherited from the [old Tuya Github repository](https://github.com/TuyaInc/tuyasmart_lock_ios_sdk), which will be deprecated soon. Use this repository for Tuya SDK development instead. You can change the existing remote repository URL. For more information, see [Tutorial](https://docs.github.com/en/free-pro-team@latest/github/using-git/changing-a-remotes-url).
 
 # Tuya Smart Lock iOS SDK
 
-[中文版](README_cn.md) | [English](README.md)
+[English](README.md) | [中文版](README_cn.md)
 
-Tuya smart lock iOS The SDK provides function packaging with smart door lock devices to speed up and simplify the development process of door lock application functions, including the following functions:
+Tuya Smart Lock iOS SDK provides function packaging with smart door lock devices to accelerate the development process of door lock application functions. The following functions are supported:
 
-* Door lock user system (including lock user management, associated password, fingerprint, card, etc.)
-* Door lock password unlocking (including dynamic password, temporary password management, etc.)
-* Door lock usage records (including door lock unlock records, doorbell records, alarm records, etc.)
+* Door lock user system: Lock user management, associated passwords, fingerprints, and cards are supported.
+* Door lock password unlocking: Dynamic passwords and temporary passwords can be managed.
+* Door lock usage records: Unlocking records, doorbell records, and alarm records are supported.
 
-## Preparation Work
+## Preparation
 
-Tuya lock SDK is based on [Tuya Smart Home SDK](https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/)
+Tuya Smart Lock iOS SDK is based on the [Tuya Smart Home SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/feature-overview?id=Ka5cgmlybhjk8).
 
-Before integrating Tuya Lock SDK, you need to do the following:
+Before the Tuya Smart Lock iOS SDK is integrated, perfrom the following steps:
 
-* Integrate TuyaHomeSdk (including application for tuya App ID and App Secret, security image configuration related environment)，please read [Tuya Smart Home SDK Document]((https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/zh-hans/resource/Preparation.html))
-* Activation of the lock device
+* Integrate the Tuya Home SDK: Apply for the Tuya App ID, App Secret, and security image, and configure the required environment. For more information, see [Preparation](https://developer.tuya.com/en/docs/app-development/preparation/preparation?id=Ka69nt983bhh5).
+* Activate the lock device.
 
-## Integrated SDK
+## Integrate the SDK
 
-###  Use CocoaPods for Quick Integration
+###  Use CocoaPods for efficient integration
 
-Add the following content in the `Podfile` file.
+Add the following content to the `Podfile` file:
 
 ```ruby
 platform :ios, '8.0'
@@ -33,34 +33,34 @@ target 'your_target_name' do
 end
 ```
 
-Then run the `pod update` command in the root directory of project. For use of CocoaPods, please refer to the [CocoaPods Guides](https://guides.cocoapods.org/). It is recommended to update the CocoaPods to the latest version.https://guides.cocoapods.org/)
+Run the `pod update` command in the root directory of the project. We recommend that you update CocoaPods to the latest version. For more information, see [CocoaPods Guides](https://guides.cocoapods.org/).
 
-### Import Header
+### Import the header file
 
-Objective-C project add in your class
+For an Objective-C project, create your class in the header file.
 
 ```objective-c
 #import <TuyaSmartLockKit/TuyaSmartLockKit.h>
 ```
 
-Swift project add in `bridge-header.h`
+For a swift project, create the header file `bridge-header.h`.
 
 ```
 import TuyaSmartLockKit
 ```
 
 
-### Smart Lock Docs
-* [BLE Smart Lock SDK](https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/BLELock.html)
-* [Wi-Fi Smart Lock SDK](https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/WiFiLock.html)
+### References
+* [Bluetooth Smart Lock SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/extension-sdk/smart-lock-sdk/blelock?id=Ka5ztruz29ekt)
+* [Wi-Fi Smart Lock SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/extension-sdk/smart-lock-sdk/wifilock?id=Ka5ztrwwcxzwj)
 
 ## Support
 
-You can get support from Tuya with the following methods:
+You can get support from Tuya Smart by using the following methods:
 
 Tuya Smart Help Center: https://support.tuya.com/en/help
 
-Technical Support Council: https://iot.tuya.com/council/ 
+Technical Support Console: https://service.console.tuya.com/
 
 ## License
 
