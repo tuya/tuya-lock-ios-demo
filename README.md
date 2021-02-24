@@ -14,7 +14,7 @@ Tuya Smart Lock iOS SDK provides function packaging with smart door lock devices
 
 Tuya Smart Lock iOS SDK is based on the [Tuya Smart Home SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/feature-overview?id=Ka5cgmlybhjk8).
 
-Before the Tuya Smart Lock iOS SDK is integrated, perfrom the following steps:
+Before the Tuya Smart Lock iOS SDK is integrated, perform the following steps:
 
 * Integrate the Tuya Home SDK: Apply for the Tuya App ID, App Secret, and security image, and configure the required environment. For more information, see [Preparation](https://developer.tuya.com/en/docs/app-development/preparation/preparation?id=Ka69nt983bhh5).
 * Activate the lock device.
