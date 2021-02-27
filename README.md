@@ -43,7 +43,7 @@ For an Objective-C project, create your class in the header file.
 #import <TuyaSmartLockKit/TuyaSmartLockKit.h>
 ```
 
-For a swift project, create the header file `bridge-header.h`.
+For a Swift project, create the header file `bridge-header.h`.
 
 ```
 import TuyaSmartLockKit
@@ -51,7 +51,7 @@ import TuyaSmartLockKit
 
 
 ### References
-* [Bluetooth Smart Lock SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/extension-sdk/smart-lock-sdk/blelock?id=Ka5ztruz29ekt)
+* [BLE Smart Lock SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/extension-sdk/smart-lock-sdk/blelock?id=Ka5ztruz29ekt)
 * [Wi-Fi Smart Lock SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/extension-sdk/smart-lock-sdk/wifilock?id=Ka5ztrwwcxzwj)
 
 ## Support
