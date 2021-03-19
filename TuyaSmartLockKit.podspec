@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TuyaSmartLockKit"
-  s.version = "1.0.2"
+  s.version = "1.1.0"
   s.summary = "A short description of #{s.name}."
   s.license = {"type"=>"MIT"}
   s.authors = {"huangkai"=>"huangkai@tuya.com"}
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.ios.vendored_frameworks = 'ios/*.framework'
   
-  s.dependency 'TuyaSmartDeviceKit'
+  s.dependency 'TuyaSmartDeviceCoreKit'
   s.dependency 'TuyaSmartBLEKit'
 
 end
