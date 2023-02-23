@@ -1,67 +1,60 @@
-#### Note: This repository is inherited from the [old Tuya Github repository](https://github.com/TuyaInc/tuyasmart_lock_ios_sdk), which will be deprecated soon. Use this repository for Tuya SDK development instead. You can change the existing remote repository URL. For more information, see [Tutorial](https://docs.github.com/en/free-pro-team@latest/github/using-git/changing-a-remotes-url).
+# Tuya iOS Smart Life App SDK Sample for Objective-C
 
-# Tuya Smart Lock iOS SDK
+This sample demonstrates the use of Tuya iOS Smart Life App SDK to build an IoT app from scratch. Tuya iOS Smart Life App SDK is divided into several function groups to give developers a clear insight into the implementation for different features, including the user registration process, home management for different users, device network configuration, and controls. For device network configuration, the EZ mode and AP mode are implemented. This allows developers to pair devices over Wi-Fi and control the devices over LAN and MQTT. For device control, a common panel is used to send and receive any type of data points.
 
-[English](README.md) | [中文版](README_cn.md)
+![Tuya Smart app](https://github.com/tuya/tuya-home-ios-sdk-sample-objc/raw/main/screenshot.png)
 
-Tuya Smart Lock iOS SDK provides function packaging with smart door lock devices to accelerate the development process of door lock application functions. The following functions are supported:
 
-* Door lock user system: Lock user management, associated passwords, fingerprints, and cards are supported.
-* Door lock password unlocking: Dynamic passwords and temporary passwords can be managed.
-* Door lock usage records: Unlocking records, doorbell records, and alarm records are supported.
+## Self-developed Smart Life App Service
+Self-Developed Smart Life App is one of Tuya’s IoT app development solutions. This solution provides the services that enable connections between the app and the cloud. It also supports a full range of services and capabilities that customers can use to independently develop mobile apps. The Smart Life App SDK used in this sample is included in the Self-developed Smart Life App Service.
 
-## Preparation
+Self-Developed Smart Life App is classified into the **Trial** and **Official** editions:
 
-Tuya Smart Lock iOS SDK is based on the [Tuya Smart Home SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/feature-overview?id=Ka5cgmlybhjk8).
+- **Self-Developed App Trial**: provided for a free trial. It supports up to 100,000 cloud API calls per month and up to 20 registered end users in total.
 
-Before the Tuya Smart Lock iOS SDK is integrated, perform the following steps:
+- **Self-Developed App Official**: provided for commercial use and costs $5,000/year (¥33,500/year) for the initial subscription and $2,000/year (¥13,500/year) for subsequent annual renewal. It is supplied with the Custom Domain Name service and up to 100 million cloud API calls per month.
 
-* Integrate the Tuya Home SDK: Apply for the Tuya App ID, App Secret, and security image, and configure the required environment. For more information, see [Preparation](https://developer.tuya.com/en/docs/app-development/preparation/preparation?id=Ka69nt983bhh5).
-* Activate the lock device.
+For more information, please check the [Pricing](https://developer.tuya.com/en/docs/app-development/app-sdk-price?id=Kbu0tcr2cbx3o).
 
-## Integrate the SDK
 
-###  Use CocoaPods for efficient integration
+## Prerequisites
 
-Add the following content to the `Podfile` file:
+- Xcode 12.0 and later
+- iOS 12 and later
 
-```ruby
-platform :ios, '8.0'
+## Use the sample
 
-target 'your_target_name' do
-   pod "TuyaSmartLockKit"
-end
+1. The Tuya iOS Smart Life App SDK is distributed through [CocoaPods](http://cocoapods.org/) and other dependencies in this sample. Make sure that you have installed CocoaPods. If not, run the following command to install CocoaPods first:
+
+```bash
+sudo gem install cocoapods
+pod setup
 ```
 
-Run the `pod update` command in the root directory of the project. We recommend that you update CocoaPods to the latest version. For more information, see [CocoaPods Guides](https://guides.cocoapods.org/).
+2. Clone or download this sample, change the directory to the one that includes **Podfile**, and then run the following command:
 
-### Import the header file
+```bash
+pod install
+```
 
-For an Objective-C project, create your class in the header file.
+3. This sample requires you to have a pair of keys and a security image from [Tuya IoT Platform](https://developer.tuya.com/), and register a developer account if you don't have one. Then, perform the following steps:
+
+   1. Log in to the [Tuya IoT platform](https://iot.tuya.com/). In the left-side navigation pane, choose **App** > **SDK Development**.
+   2. Click **Create** to create an app.
+   3. Fill in the required information. Make sure that you enter the valid Bundle ID. It cannot be changed afterward.
+   4. You can find the AppKey, AppSecret, and security image under the **Obtain Key** tag.
+
+4. Open the `TuyaAppSDKSample-iOS-ObjC.xcworkspace` pod generated for you.
+5. Fill in the AppKey and AppSecret in the **AppKey.h** file.
 
 ```objective-c
-#import <TuyaSmartLockKit/TuyaSmartLockKit.h>
+#define APP_KEY @"<#AppKey#>"
+#define APP_SECRET_KEY @"<#SecretKey#>"
 ```
 
-For a Swift project, create the header file `bridge-header.h`.
+6. Download the security image, rename it to `t_s.bmp`, and then drag it to the workspace to be at the same level as `Info.plist`.
 
-```
-import TuyaSmartLockKit
-```
+**Note**: The bundle ID, AppKey, AppSecret, and security image must be the same as your app on the [Tuya IoT Platform](https://iot.tuya.com). Otherwise, the sample cannot request the API.
 
-
-### References
-* [BLE Smart Lock SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/extension-sdk/smart-lock-sdk/blelock?id=Ka5ztruz29ekt)
-* [Wi-Fi Smart Lock SDK](https://developer.tuya.com/en/docs/app-development/ios-app-sdk/extension-sdk/smart-lock-sdk/wifilock?id=Ka5ztrwwcxzwj)
-
-## Support
-
-You can get support from Tuya Smart by using the following methods:
-
-Tuya Smart Help Center: https://support.tuya.com/en/help
-
-Technical Support Console: https://service.console.tuya.com/
-
-## License
-
-This Tuya Home iOS SDK Sample is licensed under the MIT License.
+## References
+For more information about Tuya iOS HomeSDK, see [App SDK](https://developer.tuya.com/en/docs/app-development).
